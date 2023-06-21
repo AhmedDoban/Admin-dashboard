@@ -1,0 +1,115 @@
+.Sidebar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  min-width: 250px;
+  > .titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 0.5px solid rgb(230, 227, 227);
+    color: var(--purpel-color);
+  }
+  @media (max-width: 992px) {
+    > .titel {
+      padding: 15px 10px;
+      font-size: 14px;
+      writing-mode: vertical-rl;
+    }
+  }
+  .box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    .titel p {
+      position: relative;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 5px;
+    }
+    @media (max-width: 992px) {
+      .titel p {
+        display: none;
+      }
+    }
+
+    ul {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      transition: var(--main-transition);
+      li a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 4px;
+        border-radius: 5px;
+        color: #19324f;
+        transition: var(--main-transition);
+        font-weight: 600;
+      }
+      @media (max-width: 992px) {
+        li a {
+          justify-content: center;
+        }
+        li a span {
+          display: none;
+        }
+      }
+      li a:hover {
+        background-color: #ece8ff;
+        border-radius: 5px;
+        color: var(--purpel-color);
+      }
+      li a i {
+        color: var(--purpel-color);
+      }
+    }
+    button {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border: 0;
+      background-color: var(--purpel-color);
+      transition: var(--main-transition);
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      border: 1px solid var(--purpel-color);
+      &:hover {
+        background-color: #fff;
+        color: var(--purpel-color);
+      }
+    }
+    @media (max-width: 992px) {
+      button {
+        writing-mode: vertical-lr;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .box {
+      padding: 8px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .Sidebar {
+    min-width: fit-content;
+  }
+}

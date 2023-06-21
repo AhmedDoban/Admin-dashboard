@@ -1,0 +1,11 @@
+.Auth {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  .page-wrapper {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+  }
+}
