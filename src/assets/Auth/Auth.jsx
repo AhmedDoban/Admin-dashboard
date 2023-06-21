@@ -3,6 +3,7 @@ import "./Auth.scss";
 import Sidebar from "./Sidebar/Sidebar";
 import Navbar from "./Navbar/Navbar";
 import Widget from "./Widget/Widget";
+import Featurs from "./Featurs/Featurs";
 
 function Auth() {
   return (
@@ -44,6 +45,7 @@ function Auth() {
             icon="fa-solid fa-wallet"
           />
         </div>
+        <Featurs />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@
   --blue-alt-color: #0d69d5;
   --purpel-color: #6439ff;
   --main-color: var(--blue-color);
+  --main-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
 }
 * {
   box-sizing: border-box;

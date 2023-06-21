@@ -4,8 +4,8 @@
   height: 300px;
   background-color: #fff;
   padding: 10px;
-  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-  border-radius: 10px;
+  box-shadow: var(--main-box-shadow);
+  border-radius: var(--main-border-radius);
   height: auto;
   display: flex;
   gap: 10px;
