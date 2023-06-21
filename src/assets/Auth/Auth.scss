@@ -7,5 +7,13 @@
     width: 100%;
     flex: 1;
     overflow: hidden;
+    .widget-container {
+      position: relative;
+      width: 100%;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
   }
 }
