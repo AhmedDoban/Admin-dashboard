@@ -69,7 +69,8 @@
           display: none;
         }
       }
-      li a:hover {
+      li a:hover,
+      li a.active {
         background-color: #ece8ff;
         border-radius: 5px;
         color: var(--purpel-color);

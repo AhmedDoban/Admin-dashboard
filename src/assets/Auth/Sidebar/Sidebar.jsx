@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -14,10 +14,10 @@ function Sidebar() {
         </div>
         <ul>
           <li>
-            <Link>
+            <NavLink to="">
               <i className="fa-solid fa-chart-line"></i>
               <span>Dashboard</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -27,28 +27,28 @@ function Sidebar() {
         </div>
         <ul>
           <li>
-            <Link>
+            <NavLink to="/users">
               <i className="fa-solid fa-user"></i>
               <span>Users</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="/Proudacts">
               <i className="fa-solid fa-shop"></i>
               <span>Proudacts</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="/Orders">
               <i className="fa-solid fa-store"></i>
               <span>Orders</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="/Delivery">
               <i className="fa-solid fa-truck"></i>
               <span>Delivery</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -58,16 +58,16 @@ function Sidebar() {
         </div>
         <ul>
           <li>
-            <Link>
+            <NavLink to="/Status">
               <i className="fa-solid fa-signal"></i>
               <span>Status</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="/Notificationss">
               <i className="fa-solid fa-bell"></i>
               <span>Notificationss</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -77,22 +77,22 @@ function Sidebar() {
         </div>
         <ul>
           <li>
-            <Link>
+            <NavLink to="/System Health">
               <i className="fa-solid fa-leaf"></i>
               <span>System Health</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="/Logs">
               <i className="fa-solid fa-gears"></i>
               <span>Logs</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="/Setting">
               <i className="fa-solid fa-gear"></i>
               <span>Setting</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
