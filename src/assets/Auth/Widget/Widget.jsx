@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 
 function Widget(props) {
   return (
-    <div className="Widget">
+    <div
+      className="Widget"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <div className="titel">
         <p>{props.titel}</p>
         {props.type === "High" ? (

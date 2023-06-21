@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import Navbar from "./Navbar/Navbar";
 import Widget from "./Widget/Widget";
 import Featurs from "./Featurs/Featurs";
+import Table from "./Table/Table";
 
 function Auth() {
   return (
@@ -46,6 +47,7 @@ function Auth() {
           />
         </div>
         <Featurs />
+        <Table />
       </div>
     </div>
   );

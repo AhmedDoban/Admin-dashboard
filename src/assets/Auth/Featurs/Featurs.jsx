@@ -22,7 +22,12 @@ function Featurs() {
   return (
     <div className="Featurs">
       {/******************* total-revenue ***********************/}
-      <div className="total-revenue">
+      <div
+        className="total-revenue"
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <div className="titel">
           <p>total-revenue</p>
           <i className="fa-solid fa-ellipsis-vertical"></i>
@@ -65,7 +70,12 @@ function Featurs() {
         </div>
       </div>
       {/******************* Last6months ***********************/}
-      <div className="Last6months">
+      <div
+        className="Last6months"
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <p>Total 6 Month</p>
         <AreaChart width={750} height={370} data={data} className="Chart">
           <defs>
