@@ -58,6 +58,10 @@ function Users() {
           <LodingFeachData />
         ) : (
           <div className="USerTable">
+            <div className="addsection">
+              <h1>Add New User</h1>
+              <Link to="New User/new">Add New</Link>
+            </div>
             <table>
               <tr>
                 <th onClick={() => HandleSort("id")}>

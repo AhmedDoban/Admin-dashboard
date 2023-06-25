@@ -2,6 +2,44 @@
   .USerTable {
     position: relative;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .addsection {
+      position: relative;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: var(--main-border-radius);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      box-shadow: var(--main-box-shadow);
+      h1 {
+        color: var(--main-color);
+      }
+      a {
+        position: relative;
+        padding: 10px 12px;
+        background-color: rgb(3, 194, 3);
+        color: #fff;
+        border-radius: var(--main-border-radius);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    @media (max-width: 992px) {
+      .addsection {
+        justify-content: center;
+        align-items: center;
+        a {
+          width: 100%;
+        }
+      }
+    }
     table {
       position: relative;
       background-color: #fff;
@@ -41,7 +79,7 @@
         position: relative;
         padding: 10px;
         border-bottom: 0.5px solid #eee;
-
+        background-color: #fff;
         .actions {
           position: relative;
           display: flex;
