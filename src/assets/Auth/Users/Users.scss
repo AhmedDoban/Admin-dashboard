@@ -1,0 +1,108 @@
+.users {
+  .USerTable {
+    position: relative;
+    padding: 20px;
+    table {
+      position: relative;
+      background-color: #fff;
+      box-shadow: var(--main-box-shadow);
+      border-radius: var(--main-border-radius);
+      transition: var(--main-transition);
+      border-collapse: collapse;
+      width: 100%;
+      overflow: hidden;
+      tr {
+        position: relative;
+      }
+      tr th {
+        background: #fff;
+        padding: 10px;
+        color: #000;
+        text-align: left;
+        border-bottom: 1px solid lightgray;
+
+        i {
+          transition: var(--main-transition);
+          cursor: pointer;
+          margin-right: 15px;
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+      }
+
+      @media (max-width: 992px) {
+        tr th {
+          display: none;
+        }
+      }
+
+      tr td {
+        position: relative;
+        padding: 10px;
+        border-bottom: 0.5px solid #eee;
+
+        .actions {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          i {
+            margin: 0;
+            font-weight: bold;
+            font-size: 18px;
+            transition: var(--main-transition);
+            cursor: pointer;
+            &.view {
+              color: #000;
+              &:hover {
+                color: green;
+              }
+            }
+            &.delete {
+              color: #000;
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      table {
+        background-color: transparent !important;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: none !important;
+      }
+      tr {
+        position: relative;
+        display: grid;
+        margin-bottom: 0.625em;
+        text-align: right;
+        border-radius: var(--main-border-radius);
+        box-shadow: var(--main-box-shadow);
+        flex-direction: column;
+
+        td {
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: attr(data-label);
+            left: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #212121;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
